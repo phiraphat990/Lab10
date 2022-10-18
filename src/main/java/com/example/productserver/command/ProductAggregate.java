@@ -1,6 +1,6 @@
 package com.example.productserver.command;
 
-import com.example.productserver.event.ProductCreateEvent;
+import com.example.productserver.core.event.ProductCreateEvent;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;

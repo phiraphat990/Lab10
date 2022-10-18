@@ -1,4 +1,4 @@
-package com.example.productserver.rest;
+package com.example.productserver.command.rest;
 
 
 import com.example.productserver.command.CreateProductCommand;
@@ -10,12 +10,12 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/products")
-public class ProductController {
+public class ProductCommandController {
 
     private final CommandGateway commandGateway;
 
     @Autowired
-    public ProductController(CommandGateway commandGateway){
+    public ProductCommandController(CommandGateway commandGateway){
         this.commandGateway  = commandGateway;
     }
 

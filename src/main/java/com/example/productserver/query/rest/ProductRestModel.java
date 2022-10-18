@@ -1,12 +1,12 @@
-package com.example.productserver.rest;
-
+package com.example.productserver.query.rest;
 
 import lombok.Data;
 
 import java.math.BigDecimal;
 
 @Data
-public class CreateProductRestModel {
+public class ProductRestModel {
+    private String productId;
     private String title;
     private BigDecimal price;
     private Integer quantity;
